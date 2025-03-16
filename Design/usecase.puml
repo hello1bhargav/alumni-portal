@@ -1,0 +1,33 @@
+@startuml
+
+actor Alumni
+actor "Current Student" as Student
+actor "HR Professional" as HR
+actor "College Admin" as Admin
+actor "Event Coordinator" as EventCoordinator
+
+Alumni --> (Register/Login)
+Alumni --> (Manage Profiles)
+Alumni --> (Apply for Jobs)
+Alumni --> (Participate in Discussions)
+Alumni --> (Donate to College)
+
+Student --> (Register/Login)
+Student --> (View Alumni Profiles)
+Student --> (Participate in Discussions)
+Student --> (Apply for Jobs)
+
+HR --> (Register/Login)
+HR --> (Post Job Opportunities)
+HR --> (View Applications)
+
+Admin --> (Register/Login)
+Admin --> (Manage User Roles)
+Admin --> (Create/Manage Events)
+Admin --> (Moderate Discussions)
+
+EventCoordinator --> (Register/Login)
+EventCoordinator --> (Create/Manage Events)
+EventCoordinator --> (Send Invitations)
+
+@enduml

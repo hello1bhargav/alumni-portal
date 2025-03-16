@@ -1,0 +1,28 @@
+@startuml
+
+start
+:User Registration;
+if (Valid Credentials?) then (Yes)
+    :Create Profile;
+    :Send Confirmation Email;
+else (No)
+    :Show Error Message;
+endif
+
+:User Login;
+if (Valid Login?) then (Yes)
+    :Dashboard Access;
+else (No)
+    :Show Login Error;
+endif
+
+:Request to Join Event;
+if (Event Available?) then (Yes)
+    :Confirm Participation;
+else (No)
+    :Show Event Full Message;
+endif
+
+stop
+
+@enduml
